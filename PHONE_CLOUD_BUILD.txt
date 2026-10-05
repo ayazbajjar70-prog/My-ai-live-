@@ -1,0 +1,19 @@
+MY AI — PHONE CLOUD APK BUILD
+
+1. Create/sign in to GitHub.
+2. Create a new repository (for example: my-ai-app).
+3. Upload all files/folders from this ZIP to the repository.
+   Make sure .github/workflows/build-apk.yml is included.
+4. Open the repository -> Actions.
+5. Select "Build My AI APK".
+6. Tap "Run workflow".
+7. Wait for the green check.
+8. Open the completed workflow run -> Artifacts.
+9. Download "MyAI-debug-apk", unzip it, and install the APK.
+
+No AndroidIDE is required.
+
+Note:
+- This is a DEBUG APK for testing.
+- The current My AI project is a frontend/demo and does not contain a real AI API key.
+- Never put a secret AI API key directly inside an APK.
