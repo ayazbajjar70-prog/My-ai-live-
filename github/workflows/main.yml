@@ -1,22 +1,15 @@
 
 
-1
 
-2
 
 workflows main.yml
 
 name: Build My AI APK
 
-5
+
 
 workflow dispatch:
 
-10
-
-11
-
-12
 
 jobs:
 
@@ -28,37 +21,23 @@ steps:
 
 uses: actions/checkout@v4
 
-13
 
-14
 
 uses: actions/setup-java@v4
 
-15
 
 with:
 
-16
 
 distribution: temurin
 
-17
+
 
 java-version: '17"
 
-+30
 
-19
-
-20
 
 with:
-
-21
-
-22
-
-23
 
 uses: gradle/actions/setup-gradle@v4
 
@@ -66,29 +45,29 @@ gradle-version: 8.7'
 
 name: Build APK
 
-24
+
 
 run: gradle assemblebebug-no-daemon
 
-25
 
-26
+
+
 
 name: Upload APK
 
-27
+
 
 uses: actions/upload-artifact@v4
 
-28
+
 
 with:
 
-29
+
 
 name: MyAI-APK
 
-30
+
 
 Comments 0
 
